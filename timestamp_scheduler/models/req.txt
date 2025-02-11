@@ -1,0 +1,70 @@
+[01:34, 2/12/2025] Gopal: [2/11, 20:51] Rutuja Sav.Com: Objective:
+At 12:00 AM each morning, you are provided with a list of timestamps for that day. These timestamps, separated by commas, may include duplicate values. Your task is to write a Python script that sends an API call to ifconfig.co at each of the timestamps, with precision down to the second. If multiple timestamps occur at the same second, the API calls must be sent concurrently.
+
+Notes on the API:
+- The ifconfig.co service returns the IP address of the machine making the call as a simple string when accessed via a command-line tool like curl.
+- This behavior differs from visiting the URL in a web browser, where you might see additional information presented in a formatted way.
+
+Requirements:
+1. Readability and Clarity: The …
+[02:56, 2/12/2025] Gopal: You can share the task on rutuja@sav.com
+[02:59, 2/12/2025] Gopal: [2/11, 20:51] Rutuja Sav.Com: Objective:
+At 12:00 AM each morning, you are provided with a list of timestamps for that day. These timestamps, separated by commas, may include duplicate values. Your task is to write a Python script that sends an API call to ifconfig.co at each of the timestamps, with precision down to the second. If multiple timestamps occur at the same second, the API calls must be sent concurrently.
+
+Notes on the API:
+- The ifconfig.co service returns the IP address of the machine making the call as a simple string when accessed via a command-line tool like curl.
+- This behavior differs from visiting the URL in a web browser, where you might see additional information presented in a formatted way.
+
+Requirements:
+1. Readability and Clarity: The script must be easy to understand and follow.
+2. Documentation: Include a README file explaining:
+   - How to execute the script.
+   - How the script is structured.
+   - Key design decisions.
+3. Python Standards:
+   - Use native Python libraries (e.g., datetime, subprocess, urllib, etc.).
+   - MVC frameworks (e.g., Flask), libraries like requests, or schedulers like schedule are acceptable, provided they don't abstract away the majority of the logic (e.g., avoid libraries like RQ Scheduler).
+4. Flexibility:
+   - The script should accept the list of timestamps via command-line input.
+   - Provide test utilities to generate timestamps for testing.
+5. Functionality:
+   - Log each API call's execution (success/failure) and the associated timestamp.
+   - Store the API URL in a global configuration for easy modification.
+   - Use modular functions for clear separation of responsibilities.
+6. Testing:
+   - Include unit tests for individual functions.
+   - Integration tests to validate the API calling behavior.
+7. Scheduling Options:
+   - You may use libraries like schedule or custom logic for scheduling but avoid libraries that abstract away the bulk of the work.
+
+Additional Expectations:
+- Concurrent API Calls: Ensure that multiple API calls at the same timestamp execute in parallel.
+- Error Handling: Handle potential errors gracefully, such as network issues when making the API call.
+- Logging: Include sufficient logging to track the script's behavior and execution status.
+- Code Organization: Separate core logic into functions. Avoid a monolithic script structure.
+
+Example Input:
+List of timestamps (24-hour format, HH:MM:SS):
+09:15:25,11:58:23,13:45:09,13:45:09,13:45:09,17:22:00,17:22:00
+
+Example Output:
+Log file or console output showing the execution of API calls:
+2025-01-01 09:15:25: Successfully called API at ifconfig.co
+2025-01-01 11:58:23: Successfully called API at ifconfig.co
+2025-01-01 13:45:09: Successfully called API at ifconfig.co
+2025-01-01 17:22:00: Successfully called API at ifconfig.co
+...
+
+Ç:
+Provide a zipped folder containing:
+1. Python script with clear docstrings.
+2. README file.
+3. Test script or test cases.
+4. Any sample data or configuration files needed for execution.
+[2/11, 20:51] Rutuja Sav.Com: This is the task
+You can complete it and share with me over the mail. 
+Do not use any AI to do the task. 
+Let me know if any questions
+U can use any framework
+But use completely native libraries no 3 rd party libraries
+The whole code will be evaluated using so do not use any AI in the whole task
