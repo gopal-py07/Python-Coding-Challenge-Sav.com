@@ -1,4 +1,4 @@
-[01:34, 2/12/2025] Gopal: [2/11, 20:51] Rutuja Sav.Com: Objective:
+﻿[01:34, 2/12/2025] Gopal: [2/11, 20:51] Rutuja Sav.Com: Objective:
 At 12:00 AM each morning, you are provided with a list of timestamps for that day. These timestamps, separated by commas, may include duplicate values. Your task is to write a Python script that sends an API call to ifconfig.co at each of the timestamps, with precision down to the second. If multiple timestamps occur at the same second, the API calls must be sent concurrently.
 
 Notes on the API:
@@ -68,3 +68,7 @@ Let me know if any questions
 U can use any framework
 But use completely native libraries no 3 rd party libraries
 The whole code will be evaluated using so do not use any AI in the whole task
+
+todays code 
+
+werftghjmhgfghjhg
